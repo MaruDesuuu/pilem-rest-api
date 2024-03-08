@@ -64,7 +64,17 @@ class _DetailScreenState extends State<DetailScreen> {
                     width: double.infinity,
                     fit: BoxFit.cover,
                   ),
-                  Positioned(child: IconButton(onPressed: ,))
+                  Positioned(
+                    bottom: 8,
+                    right: 8,
+                    child: IconButton(
+                      onPressed: _toggleFavorite,
+                      icon: Icon(
+                        isFavorite ? Icons.favorite : Icons.favorite_border,
+                      ),
+                      color: Colors.red,
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(height: 10),
